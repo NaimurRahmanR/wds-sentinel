@@ -1,0 +1,7 @@
+# Preserve benchmark and workbook files byte-for-byte.
+# These are third-party research data; Git must not normalize line endings.
+data/raw/*.csv -text
+data/external/**/*.csv -text
+data/external/**/*.xlsx -text
+*.pdf -text
+*.png -text
