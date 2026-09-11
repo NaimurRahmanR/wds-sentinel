@@ -1,0 +1,1 @@
+Temporary bootstrap payload for the initial WDS Sentinel release. This directory is removed automatically after repository hydration.
