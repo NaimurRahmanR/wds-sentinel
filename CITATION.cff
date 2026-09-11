@@ -1,10 +1,23 @@
 cff-version: 1.2.0
-title: "WDS Sentinel"
+title: "WDS Sentinel: Reliability-Aware Hybrid AI for Water-Distribution Supervision"
 message: "If you use this research prototype, please cite the repository and the original third-party datasets listed in data/PROVENANCE.md."
 type: software
 authors:
   - family-names: Rahman
     given-names: Naimur
+    orcid: "https://orcid.org/0009-0004-2794-077X"
 year: 2026
 version: 0.1.0
 license: MIT
+repository-code: "https://github.com/NaimurRahmanR/wds-sentinel"
+url: "https://github.com/NaimurRahmanR/wds-sentinel"
+keywords:
+  - reliable AI
+  - hybrid AI
+  - water distribution systems
+  - knowledge-based systems
+  - multi-agent systems
+  - decision support
+  - uncertainty and reliability
+  - evidence degradation
+  - explainable AI
