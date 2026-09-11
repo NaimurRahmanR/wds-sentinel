@@ -1,0 +1,6 @@
+scenario,condition,wds_timestamp,ground_truth_onset_window,predictor_score,corroboration_count,missingness,wds_state,hazard_timestamp,hazard_state,integrated_action
+1_normal_wds_normal_hazard,clean,2018-07-01 01:00:00,0,0.550134272315785,2.0,0.0,NO_ALERT,2018-01-01,NORMAL,ROUTINE
+2_real_onset_alert_normal_hazard,clean,2018-10-26 02:10:00,1,0.9968980221108614,1.0,0.0,ALERT,2018-01-01,NORMAL,ALERT
+3_elevated_hazard_normal_wds,clean,2018-07-01 01:00:00,0,0.550134272315785,2.0,0.0,NO_ALERT,2018-01-07,ELEVATED,HAZARD_WATCH
+4_elevated_hazard_real_onset_alert,clean,2018-10-26 02:10:00,1,0.9968980221108614,1.0,0.0,ALERT,2018-01-07,ELEVATED,ALERT_ELEVATED_HAZARD_CONTEXT
+5_elevated_hazard_degraded_real_onset,missing_sensor_subset,2018-07-07 09:10:00,1,0.01303782919428642,0.0,0.2972972972972973,ABSTAIN,2018-01-07,ELEVATED,ABSTAIN

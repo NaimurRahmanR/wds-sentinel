@@ -1,0 +1,121 @@
+{
+  "audit_date": "2026-09-11",
+  "python_target": "3.12",
+  "tests": {
+    "passed": 135
+  },
+  "agent_equivalence": {
+    "rows_compared": 264900,
+    "mismatches": 0
+  },
+  "hazard_validation": {
+    "cutoff_1d_mm": 34.1,
+    "cutoff_3d_mm": 82.0,
+    "cutoff_7d_mm": 163.575,
+    "elevated_days_2018": 21,
+    "defined_days_2018": 365
+  },
+  "integrated_scenarios": "real BattLeDIM validation evidence + real independent CWA/CODIS precipitation context",
+  "final_2019_temporal_evaluation": {
+    "raw_aligned_rows": 105120,
+    "scored_rows_after_frozen_boundary_embargo": 105108,
+    "genuine_new_onsets": 19,
+    "carryover_pipes": [
+      "p257",
+      "p427",
+      "p654",
+      "p810"
+    ],
+    "clean_predictor": {
+      "auprc": 0.0040412493289839445,
+      "auroc": 0.5305640198377902,
+      "frozen_threshold": 0.99
+    },
+    "clean_systems": {
+      "A_DIRECT": {
+        "event_detection": "1/19",
+        "coverage": 1.0,
+        "selective_unsafe_risk": 0.0022738516573429235
+      },
+      "B_HYBRID": {
+        "event_detection": "1/19",
+        "coverage": 1.0,
+        "selective_unsafe_risk": 0.0023309357993682688
+      },
+      "C_RELIABILITY_AWARE": {
+        "event_detection": "1/19",
+        "coverage": 0.8616756098489173,
+        "selective_unsafe_risk": 0.0024842937428921595
+      }
+    },
+    "protocol_note": "2019 pressure/leakage were previously inspected by a rejected forecasting baseline; no subsequent detection/KBS/MAS/reliability development used 2019, and no tuning followed this final run."
+  },
+  "remaining_limitations": [
+    "underlying BattLeDIM leak detector remains weak and is not operationally validated",
+    "the independent CWA/CODIS precipitation context is not validated against flood/damage ground truth",
+    "the physically linked BWDF result concerns weather-demand response, not rainfall-caused pipe failure or flood damage",
+    "BattLeDIM Zenodo record is publicly downloadable but displayed licence field was blank during audit"
+  ],
+  "artifact_sha256": {
+    "results/derived/coverage_aware_evaluation_summary.csv": "8d9292a12642099867d92013d288f0844a4ac9899f63825160c380824955437f",
+    "results/derived/agent_vs_frozen_metric_summary.csv": "38cfa563052e9ae72089e177eaa040498202c59ddb3e4a9ce09f2b9b57f43195",
+    "results/derived/hazard_validation_summary.csv": "b02fc8f5fa79dc26072ceaa5328bb3d85eeefdf419c6ed439f1fd035ba41d19b",
+    "results/derived/hazard_integration_scenarios.json": "a7a2fd86e285de666dfea16fdcd3c2d6c7a8f27d984c5682b8877aacdc7f61ab",
+    "results/derived/hazard_integration_scenarios_summary.csv": "53accbe0f0963e963eb944c75f0a4289d78e3a796b5263e70425fb8378b8cb9b",
+    "results/derived/final_2019_temporal_evaluation.csv": "8fdffa46bdc88439ccaeb3cda0420fcd0b4051ea0196c0281621aea1ddef7c6d",
+    "results/derived/final_2019_predictive_metrics.csv": "9695191529b2e8353ae3100f3f7db7b327daf251c1d65e73f6a1d87fa12e477f",
+    "results/derived/final_2019_temporal_summary.md": "898d1dc2a015c27cb5ee3bc77d3d1433ecd1607f19fd771e76cac3216f09d7fe",
+    "results/figures/abc_coverage_by_condition.png": "784e7596538382a94fa3f21a32990f0a2ded1241b5632c1c89bdff00ac96b586",
+    "results/figures/detection_false_alert_tradeoff.png": "690781efd5c3c164217cc3c56e9c385286a8cb4b9aebdbc44fff9dab1db9f568",
+    "results/figures/integrated_real_evidence_scenarios.png": "86425683bb3fe688116c48024f01cfc8566469db837dd51800c6e9b1ef32d882",
+    "results/figures/final_2019_clean_temporal_comparison.png": "c5997ce99a0b8dd105e4b149838c50e6d7405bb17fdfb32b46ff9663f0f1f03b",
+    "results/derived/linked_bwdf_w1_forecast_metrics.csv": "79646da500b486c1e2d07f6bfd769b741e8fbbeabf6e79f6eb61a9fe1b2ee5c4",
+    "results/derived/linked_bwdf_extreme_rain_effects.csv": "f89bbc9ae29e98d0365aa796fb65a66181ddf4ecfc1ba72df204c17a51d8fe25",
+    "results/derived/linked_bwdf_decision_traces.json": "58a9bbe392b6c5cdf10f5a470264dd1ff248c1a0d5a85b0f5dd32d6f5bd3e5fa",
+    "results/derived/linked_bwdf_validation_summary.md": "1f6de950ff0c040a09e99cfdfff43dc1d1cff993106461901990e9af200a033f",
+    "results/figures/linked_bwdf_w1_forecast_comparison.png": "9becd61d9f4af08406ec63e3c01054392650b29e483d2bd85f0bf58267d9b244",
+    "results/figures/linked_bwdf_extreme_rain_response.png": "0023ab01737b23da3138bc4525764512f312a30716b82a2576d97c8f58841a6b",
+    "results/raw/linked_bwdf_extreme_weather_validation.log": "0f1a2c49e3ccda1d7f54480cae12edef95168eb125adfab23fcfacab53584ac2",
+    "data/external/bwdf/InflowData.xlsx": "c239bdb5c98eee00d94fb68b6b0405c39c3ac9b032c6fd4c94bb8d12d00640c0",
+    "data/external/bwdf/WeatherData.xlsx": "70729f184c0b47abde2ef2686e28e013693641782d6f1b26b3f28de9c8d0c62c",
+    "README.md": "792e10da76fd8d0d8006065a0b288b967caec09b195097bf2b72c8d790ca2873",
+    "data/PROVENANCE.md": "6d154ae3cb383f5d6eec1045ce13406623130032744dd5552f239321e0e43b44",
+    "THIRD_PARTY_DATA_NOTICE.md": "34a2460fdba1e7065f93fdf5ec1f4cab82c6f1f084fa48902e4f5451cc572c87",
+    "docs/research_protocol_status.md": "e64841e03d193d6b95884b989a9a0f1fdd70520c2e14ac07bd2d9e73c97fae51",
+    "report/wds_sentinel_report.tex": "244a99b416c8c210c4af7b1f3544dc7c17240ca7a514e400d807feb1ed554a82",
+    "report/wds_sentinel_report.pdf": "302378a738ed63a701a40da086191ba2a678b1bfe0a67f0f757c11a90017c7ff"
+  },
+  "physically_linked_bwdf_validation": {
+    "source": "Battle of Water Demand Forecasting (BWDF), real WDN in northeast Italy",
+    "aligned_hourly_rows": 19679,
+    "training_end": "2022-07-24T23:00:00+02:00",
+    "evaluation_week": "W1 2022-07-25 through 2022-07-31",
+    "extreme_rain_threshold_mm_day": 18.775,
+    "weather_sensitive_dmas": [
+      "DMA 2",
+      "DMA 3"
+    ],
+    "weather_ridge_better_mae_than_previous_week_baseline": "9/10 DMAs",
+    "dma2": {
+      "baseline_mae_lps": 1.826146,
+      "weather_ridge_mae_lps": 1.472311,
+      "mae_reduction_pct": 19.38,
+      "extreme_minus_dry_weekly_residual_lps": -0.432363,
+      "bootstrap_95": [
+        -0.77811,
+        -0.141141
+      ]
+    },
+    "dma3": {
+      "baseline_mae_lps": 1.562575,
+      "weather_ridge_mae_lps": 1.333299,
+      "mae_reduction_pct": 14.67,
+      "extreme_minus_dry_weekly_residual_lps": -0.530076,
+      "bootstrap_95": [
+        -0.966267,
+        -0.188017
+      ]
+    },
+    "interpretation": "observational co-located weather-demand response; no rainfall-to-hydraulic-failure causal claim"
+  }
+}

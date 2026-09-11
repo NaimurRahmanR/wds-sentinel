@@ -1,0 +1,39 @@
+Training the frozen predictor (unchanged recipe — identical to run_reliability_experiment.py)...
+threshold=0.990  instability_cutoff=5.3533  val onset events=5
+
+=== Condition: clean ===
+  rows=52980  matches=52980  match_rate=100.000000%  mismatches=0
+
+=== Condition: missing_sensor_subset ===
+  rows=52980  matches=52980  match_rate=100.000000%  mismatches=0
+
+=== Condition: additive_noise ===
+  rows=52980  matches=52980  match_rate=100.000000%  mismatches=0
+
+=== Condition: conflicting_evidence ===
+  rows=52980  matches=52980  match_rate=100.000000%  mismatches=0
+
+=== Condition: sensor_dropout ===
+  rows=52980  matches=52980  match_rate=100.000000%  mismatches=0
+
+=== Metric reproduction: frozen C vs agent-based C, per condition ===
+            condition   source  coverage  missed_event_rate  n_missed  false_per_day  abst_esc_rate  unsafe_rate
+                clean frozen_C  0.865836                0.8         4       0.260934       0.134164     0.001038
+                clean  agent_C  0.865836                0.8         4       0.260934       0.134164     0.001038
+missing_sensor_subset frozen_C  0.000000                1.0         5       8.213972       1.000000     0.000000
+missing_sensor_subset  agent_C  0.000000                1.0         5       8.213972       1.000000     0.000000
+       additive_noise frozen_C  0.833428                0.2         1      16.976991       0.166572     0.001057
+       additive_noise  agent_C  0.833428                0.2         1      16.976991       0.166572     0.001057
+ conflicting_evidence frozen_C  0.865817                0.8         4       0.505559       0.134183     0.001019
+ conflicting_evidence  agent_C  0.865817                0.8         4       0.505559       0.134183     0.001019
+       sensor_dropout frozen_C  0.870442                0.8         4       5.827517       0.129558     0.001057
+       sensor_dropout  agent_C  0.870442                0.8         4       5.827517       0.129558     0.001057
+
+=== Overall equivalence ===
+clean: 0 mismatches
+missing_sensor_subset: 0 mismatches
+additive_noise: 0 mismatches
+conflicting_evidence: 0 mismatches
+sensor_dropout: 0 mismatches
+
+No mismatches found in any condition.

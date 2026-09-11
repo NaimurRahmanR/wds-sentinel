@@ -1,0 +1,43 @@
+Training the frozen predictor (unchanged recipe)...
+Frozen instability cutoff (99th pct of clean training instability): 5.3533
+
+=== Condition: clean ===
+  A_DIRECT               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=60/52980  selective_risk=0.0011  missed=4/5  false/day=0.66
+  B_HYBRID               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=64/52980  selective_risk=0.0012  missed=4/5  false/day=0.26
+  C_RELIABILITY_AWARE    coverage=0.8658  abstain/escalate=0.1342  unsafe_count=55/45872  selective_risk=0.0012  missed=4/5  false/day=0.26
+
+=== Condition: missing_sensor_subset ===
+  A_DIRECT               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=53/52980  selective_risk=0.0010  missed=3/5  false/day=9.59
+  B_HYBRID               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=65/52980  selective_risk=0.0012  missed=5/5  false/day=8.21
+  C_RELIABILITY_AWARE    coverage=0.0000  abstain/escalate=1.0000  unsafe_count=0/0  selective_risk=undefined (0 autonomous decisions)  missed=5/5  false/day=8.21
+
+=== Condition: additive_noise ===
+  A_DIRECT               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=47/52980  selective_risk=0.0009  missed=0/5  false/day=46.42
+  B_HYBRID               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=60/52980  selective_risk=0.0011  missed=1/5  false/day=16.98
+  C_RELIABILITY_AWARE    coverage=0.8334  abstain/escalate=0.1666  unsafe_count=56/44155  selective_risk=0.0013  missed=1/5  false/day=16.98
+
+=== Condition: conflicting_evidence ===
+  A_DIRECT               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=57/52980  selective_risk=0.0011  missed=3/5  false/day=1.46
+  B_HYBRID               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=63/52980  selective_risk=0.0012  missed=4/5  false/day=0.51
+  C_RELIABILITY_AWARE    coverage=0.8658  abstain/escalate=0.1342  unsafe_count=54/45871  selective_risk=0.0012  missed=4/5  false/day=0.51
+
+=== Condition: sensor_dropout ===
+  A_DIRECT               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=59/52980  selective_risk=0.0011  missed=3/5  false/day=21.00
+  B_HYBRID               coverage=1.0000  abstain/escalate=0.0000  unsafe_count=64/52980  selective_risk=0.0012  missed=4/5  false/day=5.83
+  C_RELIABILITY_AWARE    coverage=0.8704  abstain/escalate=0.1296  unsafe_count=56/46116  selective_risk=0.0012  missed=4/5  false/day=5.83
+
+Wrote /mnt/data/wds_sentinel_fix/wds-sentinel/results/derived/coverage_aware_evaluation_summary.csv
+Wrote /mnt/data/wds_sentinel_fix/wds-sentinel/results/derived/reliability_sensitivity_sweep_C.csv
+Wrote /mnt/data/wds_sentinel_fix/wds-sentinel/results/derived/reliability_sensitivity_risk_vs_coverage.png
+
+=== Rows with coverage == 0 in the sweep (risk undefined, shown explicitly, not omitted) ===
+            condition  instability_percentile  instability_cutoff  is_frozen_operating_point  coverage  selective_unsafe_risk  autonomous_count  unsafe_count
+missing_sensor_subset                   50.00            0.995318                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   75.00            1.790614                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   90.00            2.746610                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   95.00            3.415810                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   97.50            4.110946                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   99.00            5.353259                       True       0.0                    NaN                 0             0
+missing_sensor_subset                   99.50            9.687510                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   99.90           11.334906                      False       0.0                    NaN                 0             0
+missing_sensor_subset                   99.99           12.383549                      False       0.0                    NaN                 0             0

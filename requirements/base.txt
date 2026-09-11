@@ -1,0 +1,9 @@
+# Direct dependency snapshot used for the audited package (2026-09-11).
+# Transitive dependencies are resolved by pip for the target platform.
+numpy==2.3.5
+pandas==2.2.3
+pydantic==2.13.4
+PyYAML==6.0.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+openpyxl==3.1.5

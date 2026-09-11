@@ -1,0 +1,28 @@
+Linked BWDF extreme-weather validation
+Training end: 2022-07-24 23:00:00+02:00
+W1: 2022-07-25 00:00:00+02:00 to 2022-07-31 23:00:00+02:00
+Training-calibrated extreme-rain threshold: 18.775000 mm/day
+
+W1 forecast metrics:
+          n  naive_mae  weather_ridge_mae  naive_rmse  weather_ridge_rmse
+dma                                                                      
+DMA 1   168   1.092887           0.930735    1.369126            1.226365
+DMA 2   168   1.826146           1.472311    2.428560            1.849848
+DMA 3   166   1.562575           1.333299    1.961754            1.576286
+DMA 4   166   3.122093           2.480841    3.776647            2.976533
+DMA 5   168   2.188363           1.806039    2.926019            2.422222
+DMA 6   168   1.020625           0.750091    1.341925            1.022972
+DMA 7   163   2.275261           1.932054    2.832383            2.361052
+DMA 8    63   1.893492           1.957126    2.392634            2.418998
+DMA 9   168   1.290461           1.115498    1.812910            1.567170
+DMA 10  168   1.559494           1.178630    1.995497            1.451667
+
+Post-training linked effects (pre-specified DMA 2/3):
+       extreme_days  dry_days  extreme_mean_weekly_residual_lps  dry_mean_weekly_residual_lps  difference_lps  bootstrap_95_lo  bootstrap_95_hi
+dma                                                                                                                                            
+DMA 2            11       148                         -0.417652                      0.014710       -0.432363        -0.778110        -0.141141
+DMA 3            11       148                         -0.524332                      0.005743       -0.530076        -0.966267        -0.188017
+
+Decision traces:
+DMA 2 at 2022-07-26T12:00:00+02:00: daily rainfall=32.6 mm; extreme threshold=18.775 mm; same-hour previous-week demand residual=-1.25 L/s; suppression cutoff=-0.933 L/s; rules fired=R8_EXTREME_RAIN,R9_DEMAND_SUPPRESSION,R10_LINKED_WEATHER_RESPONSE; action=WEATHER_LINKED_DEMAND_RESPONSE. This records a co-located observational weather-demand response and does not assert causation.
+DMA 3 at 2022-07-26T12:00:00+02:00: daily rainfall=32.6 mm; extreme threshold=18.775 mm; same-hour previous-week demand residual=-2.165 L/s; suppression cutoff=-0.774 L/s; rules fired=R8_EXTREME_RAIN,R9_DEMAND_SUPPRESSION,R10_LINKED_WEATHER_RESPONSE; action=WEATHER_LINKED_DEMAND_RESPONSE. This records a co-located observational weather-demand response and does not assert causation.

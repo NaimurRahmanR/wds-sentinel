@@ -1,0 +1,96 @@
+{
+  "rain_threshold_mm_day": 18.775,
+  "training_end": "2022-07-24T23:00:00+02:00",
+  "w1_start": "2022-07-25T00:00:00+02:00",
+  "w1_end": "2022-07-31T23:00:00+02:00",
+  "decisions": [
+    {
+      "timestamp": "2022-07-26T12:00:00+02:00",
+      "dma": "DMA 2",
+      "action": "WEATHER_LINKED_DEMAND_RESPONSE",
+      "extreme_rain": true,
+      "seasonal_residual": -1.25,
+      "suppression_cutoff": -0.9332499999999989,
+      "rules_fired": [
+        "R8_EXTREME_RAIN",
+        "R9_DEMAND_SUPPRESSION",
+        "R10_LINKED_WEATHER_RESPONSE"
+      ],
+      "facts": {
+        "extreme_rain": true,
+        "seasonal_residual": -1.25,
+        "suppression_cutoff": -0.9332499999999989,
+        "weather_available": true,
+        "demand_available": true,
+        "extreme_weather_context": "EXTREME_RAIN",
+        "demand_suppressed": true,
+        "linked_weather_demand_response": true
+      },
+      "evidence": [
+        {
+          "source": "bwdf_weather_station",
+          "modality": "precipitation",
+          "timestamp": "2022-07-26T12:00:00+02:00",
+          "value": 32.6,
+          "availability": true,
+          "quality": 1.0,
+          "provenance": "BWDF weather station within case-study WDN; daily rain sum"
+        },
+        {
+          "source": "DMA 2",
+          "modality": "demand_residual",
+          "timestamp": "2022-07-26T12:00:00+02:00",
+          "value": -1.25,
+          "availability": true,
+          "quality": 1.0,
+          "provenance": "observed DMA net inflow minus same-hour previous-week inflow"
+        }
+      ],
+      "explanation": "DMA 2 at 2022-07-26T12:00:00+02:00: daily rainfall=32.6 mm; extreme threshold=18.775 mm; same-hour previous-week demand residual=-1.25 L/s; suppression cutoff=-0.933 L/s; rules fired=R8_EXTREME_RAIN,R9_DEMAND_SUPPRESSION,R10_LINKED_WEATHER_RESPONSE; action=WEATHER_LINKED_DEMAND_RESPONSE. This records a co-located observational weather-demand response and does not assert causation."
+    },
+    {
+      "timestamp": "2022-07-26T12:00:00+02:00",
+      "dma": "DMA 3",
+      "action": "WEATHER_LINKED_DEMAND_RESPONSE",
+      "extreme_rain": true,
+      "seasonal_residual": -2.165,
+      "suppression_cutoff": -0.7744999999999995,
+      "rules_fired": [
+        "R8_EXTREME_RAIN",
+        "R9_DEMAND_SUPPRESSION",
+        "R10_LINKED_WEATHER_RESPONSE"
+      ],
+      "facts": {
+        "extreme_rain": true,
+        "seasonal_residual": -2.165,
+        "suppression_cutoff": -0.7744999999999995,
+        "weather_available": true,
+        "demand_available": true,
+        "extreme_weather_context": "EXTREME_RAIN",
+        "demand_suppressed": true,
+        "linked_weather_demand_response": true
+      },
+      "evidence": [
+        {
+          "source": "bwdf_weather_station",
+          "modality": "precipitation",
+          "timestamp": "2022-07-26T12:00:00+02:00",
+          "value": 32.6,
+          "availability": true,
+          "quality": 1.0,
+          "provenance": "BWDF weather station within case-study WDN; daily rain sum"
+        },
+        {
+          "source": "DMA 3",
+          "modality": "demand_residual",
+          "timestamp": "2022-07-26T12:00:00+02:00",
+          "value": -2.165,
+          "availability": true,
+          "quality": 1.0,
+          "provenance": "observed DMA net inflow minus same-hour previous-week inflow"
+        }
+      ],
+      "explanation": "DMA 3 at 2022-07-26T12:00:00+02:00: daily rainfall=32.6 mm; extreme threshold=18.775 mm; same-hour previous-week demand residual=-2.165 L/s; suppression cutoff=-0.774 L/s; rules fired=R8_EXTREME_RAIN,R9_DEMAND_SUPPRESSION,R10_LINKED_WEATHER_RESPONSE; action=WEATHER_LINKED_DEMAND_RESPONSE. This records a co-located observational weather-demand response and does not assert causation."
+    }
+  ]
+}

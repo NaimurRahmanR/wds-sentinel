@@ -1,0 +1,32 @@
+name: wds_reliability_2018
+python: "3.12"
+data:
+  year: 2018
+  modalities: [pressure, flow, level]
+  ground_truth: leakages
+split:
+  train: "2018-01-01/2018-06-30"
+  validation: "2018-07-01/2018-12-31"
+target:
+  task: early_onset_detection
+  window: "1h"
+predictor:
+  type: LogisticRegression
+  class_weight: balanced
+  max_iter: 2000
+  C: 1.0
+  threshold_selection: validation_max_f1_frozen
+features:
+  diff_steps: [1, 3, 12]
+  baseline_window_samples: 24
+systems:
+  A: direct_predictor
+  B: predictor_and_statistical_corroboration
+  C: B_plus_reliability_gate
+reliability:
+  missingness_cutoff: 0.20
+  disagreement_cutoff: 3.0
+  instability_cutoff: training_99th_percentile
+degradations:
+  seed: 20260910
+  conditions: [clean, missing_sensor_subset, additive_noise, conflicting_evidence, sensor_dropout]

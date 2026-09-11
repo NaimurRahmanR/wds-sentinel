@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local/editor noise
+.DS_Store
+.vscode/
+.idea/
+
+# Scratch archives and temporary audit material
+*.tar.gz
+battledim_extracted/
+*.tmp
+
+# Data files used by the released reproducibility package are intentionally
+# NOT ignored. They remain third-party material; see THIRD_PARTY_DATA_NOTICE.md.

@@ -1,0 +1,33 @@
+FINAL FROZEN 2019 TEMPORAL EVALUATION
+Execution note: evaluated condition-by-condition in the audit environment because of a per-command runtime ceiling. Each condition used the same serialized 2018-frozen predictor/reliability state; scripts/run_final_2019_evaluation.py reproduces the same logic in one process.
+
+Frozen threshold: 0.99
+Scored rows: 105108
+Genuine new onsets: 19
+Carryovers excluded: p257, p427, p654, p810
+
+PREDICTIVE METRICS
+            condition  n_rows  positive_rows  positive_rate    auprc    auroc  precision_at_frozen_threshold  recall_at_frozen_threshold  f1_at_frozen_threshold  frozen_threshold  n_onsets          carryovers
+                clean  105108            247        0.00235 0.004041 0.530564                       0.022161                    0.032389                0.026316              0.99        19 p257;p427;p654;p810
+missing_sensor_subset  105108            247        0.00235 0.002220 0.501047                       0.001059                    0.044534                0.002070              0.99        19 p257;p427;p654;p810
+       additive_noise  105108            247        0.00235 0.002513 0.504698                       0.002436                    0.178138                0.004806              0.99        19 p257;p427;p654;p810
+ conflicting_evidence  105108            247        0.00235 0.004042 0.530621                       0.015175                    0.040486                0.022075              0.99        19 p257;p427;p654;p810
+       sensor_dropout  105108            247        0.00235 0.002976 0.498775                       0.004052                    0.125506                0.007850              0.99        19 p257;p427;p654;p810
+
+SYSTEM METRICS
+            condition              system  n_rows  autonomous_coverage  abstain_escalate_rate  unsafe_autonomous_count  autonomous_count  selective_unsafe_risk  unsafe_timestep_rate  missed_onset_events  n_onset_events  event_detection_rate  non_onset_alert_episodes_per_day
+                clean            A_DIRECT  105108             1.000000               0.000000                      239            105108               0.002274              0.002274                   18              19              0.052632                          0.772698
+                clean            B_HYBRID  105108             1.000000               0.000000                      245            105108               0.002331              0.002331                   18              19              0.052632                          0.405530
+                clean C_RELIABILITY_AWARE  105108             0.861676               0.138324                      225             90569               0.002484              0.002141                   18              19              0.052632                          0.405530
+missing_sensor_subset            A_DIRECT  105108             1.000000               0.000000                      236            105108               0.002245              0.002245                   15              19              0.210526                          5.956901
+missing_sensor_subset            B_HYBRID  105108             1.000000               0.000000                      243            105108               0.002312              0.002312                   16              19              0.157895                          5.608913
+missing_sensor_subset C_RELIABILITY_AWARE  105108             0.000000               1.000000                        0                 0                    NaN              0.000000                   16              19              0.157895                          5.608913
+       additive_noise            A_DIRECT  105108             1.000000               0.000000                      203            105108               0.001931              0.001931                    2              19              0.894737                         38.539013
+       additive_noise            B_HYBRID  105108             1.000000               0.000000                      230            105108               0.002188              0.002188                    7              19              0.631579                         14.527824
+       additive_noise C_RELIABILITY_AWARE  105108             0.845635               0.154365                      207             88883               0.002329              0.001969                    7              19              0.631579                         14.527824
+ conflicting_evidence            A_DIRECT  105108             1.000000               0.000000                      237            105108               0.002255              0.002255                   16              19              0.157895                          1.359072
+ conflicting_evidence            B_HYBRID  105108             1.000000               0.000000                      244            105108               0.002321              0.002321                   17              19              0.105263                          0.627475
+ conflicting_evidence C_RELIABILITY_AWARE  105108             0.861676               0.138324                      225             90569               0.002484              0.002141                   17              19              0.105263                          0.627475
+       sensor_dropout            A_DIRECT  105108             1.000000               0.000000                      216            105108               0.002055              0.002055                    8              19              0.578947                         17.377492
+       sensor_dropout            B_HYBRID  105108             1.000000               0.000000                      237            105108               0.002255              0.002255                   11              19              0.421053                          5.200643
+       sensor_dropout C_RELIABILITY_AWARE  105108             0.865786               0.134214                      226             91001               0.002483              0.002150                   11              19              0.421053                          5.200643

@@ -1,0 +1,17 @@
+name: independent_precipitation_context
+source:
+  underlying: Taiwan_CWA_CODIS
+  station: "466920"
+  bundled_copy: Raingel/historical_weather
+calibration: "2013-01-01/2017-12-31"
+validation: "2018-01-01/2018-12-31"
+trace_precipitation:
+  source_code: -9.8
+  converted_mm: 0.09
+indicator:
+  windows_days: [1, 3, 7]
+  percentile: 95
+  elevated_if: any_window_exceeds_frozen_training_cutoff
+integration:
+  relationship_to_ltown: independent_context_only
+  modifies_wds_operational_state: false

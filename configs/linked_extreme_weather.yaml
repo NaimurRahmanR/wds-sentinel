@@ -1,0 +1,21 @@
+experiment: linked_extreme_weather_bwdf_v1
+dataset: Battle of Water Demand Forecasting (BWDF)
+training_end: 2022-07-24T23:00:00+02:00
+forecast_evaluation:
+  start: 2022-07-25T00:00:00+02:00
+  end: 2022-07-31T23:00:00+02:00
+  name: W1
+weather_sensitive_dmas:
+  - DMA 2
+  - DMA 3
+extreme_rain_definition:
+  aggregation: daily_sum
+  calibration: training_only
+  population: positive_rain_days
+  percentile: 0.95
+forecast_models:
+  baseline: same_hour_previous_week
+  weather_aware: ridge_alpha_1_with_lag168_lag336_calendar_and_current_weather
+claims:
+  causal: false
+  interpretation: observational physically co-located weather-demand association

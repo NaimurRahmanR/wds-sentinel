@@ -1,0 +1,2 @@
+train_start,train_end,validation_start,validation_end,percentile,cutoff_1d_mm,cutoff_3d_mm,cutoff_7d_mm,validation_elevated_days,validation_defined_days,validation_total_days,selected_normal_date,selected_elevated_date
+2013-01-01,2017-12-31,2018-01-01,2018-12-31,95.0,34.099999999999994,82.0,163.57499999999993,21,365,365,2018-01-01,2018-01-07

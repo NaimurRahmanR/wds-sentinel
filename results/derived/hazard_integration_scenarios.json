@@ -1,0 +1,1789 @@
+{
+  "1_normal_wds_normal_hazard": {
+    "wds_condition": "clean",
+    "wds_timestamp": "2018-07-01 01:00:00",
+    "wds_ground_truth_onset_window": 0,
+    "hazard_timestamp": "2018-01-01 00:00:00",
+    "evidence_message": {
+      "missingness": 0.0,
+      "availability": 1.0,
+      "disagreement": 2.6443631813124826,
+      "instability": 0.7143929740175272,
+      "n_evidence_items": 37
+    },
+    "prediction_message": {
+      "score": 0.550134272315785,
+      "threshold": 0.99,
+      "predictor_version": "frozen_predictor_v1"
+    },
+    "reasoning_message": {
+      "decision": "NO_ALERT",
+      "facts": {
+        "predictor_score": 0.550134272315785,
+        "predictor_threshold": 0.99,
+        "corroboration_count": 2.0,
+        "predictor_alert": false,
+        "corroborated": true,
+        "hybrid_decision": "NO_ALERT"
+      },
+      "fired_rules": [
+        "R1_PREDICTOR_ALERT",
+        "R2_CORROBORATED",
+        "R3_HYBRID_DECISION"
+      ],
+      "contradictions": [],
+      "corroboration_count": 2.0
+    },
+    "reliability_message": {
+      "unreliable": false,
+      "reasons": [],
+      "final_decision": "NO_ALERT"
+    },
+    "hazard_message": {
+      "state": "NORMAL",
+      "available": true,
+      "elevated": false,
+      "daily_precip_mm": 0.0,
+      "antecedent": {
+        "precip_sum_1d": 0.0,
+        "precip_sum_3d": 3.1,
+        "precip_sum_7d": 7.6
+      },
+      "fired_rules": [
+        "R6_HAZARD_NORMAL"
+      ]
+    },
+    "wds_operational_state": "NO_ALERT",
+    "evidence_reliability_state": "RELIABLE",
+    "integrated_supervisory_action": "ROUTINE",
+    "combined_explanation": "Knowledge/Reasoning Agent (WDS): At 2018-07-01 01:00:00, decision = NO_ALERT. Rules fired: R1_PREDICTOR_ALERT, R2_CORROBORATED, R3_HYBRID_DECISION. No reliability override applied. Evidence: 37/37 sources available at decision time. Reliability Agent: evidence reliability = RELIABLE. Hazard Agent: independent CWA/CODIS precipitation context = NORMAL. Knowledge Agent (hazard): rules fired: R6_HAZARD_NORMAL. Supervisory Agent: integrated action = ROUTINE. Hazard context is independent of the BattLeDIM WDS evidence and does not alter the WDS operational state or imply a hydraulic causal link.",
+    "wds_evidence": [
+      {
+        "source": "battledim_pressure:n1",
+        "modality": "pressure",
+        "value": 28.59,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n4",
+        "modality": "pressure",
+        "value": 33.68,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n31",
+        "modality": "pressure",
+        "value": 36.95,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n54",
+        "modality": "pressure",
+        "value": 37.15,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n105",
+        "modality": "pressure",
+        "value": 50.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n114",
+        "modality": "pressure",
+        "value": 54.04,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n163",
+        "modality": "pressure",
+        "value": 52.6,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n188",
+        "modality": "pressure",
+        "value": 55.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n215",
+        "modality": "pressure",
+        "value": 39.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n229",
+        "modality": "pressure",
+        "value": 52.58,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n288",
+        "modality": "pressure",
+        "value": 52.84,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n296",
+        "modality": "pressure",
+        "value": 42.46,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n332",
+        "modality": "pressure",
+        "value": 56.47,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n342",
+        "modality": "pressure",
+        "value": 46.77,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n410",
+        "modality": "pressure",
+        "value": 31.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n415",
+        "modality": "pressure",
+        "value": 45.63,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n429",
+        "modality": "pressure",
+        "value": 36.81,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n458",
+        "modality": "pressure",
+        "value": 43.55,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n469",
+        "modality": "pressure",
+        "value": 47.58,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n495",
+        "modality": "pressure",
+        "value": 51.72,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n506",
+        "modality": "pressure",
+        "value": 53.58,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n516",
+        "modality": "pressure",
+        "value": 54.9,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n519",
+        "modality": "pressure",
+        "value": 47.61,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n549",
+        "modality": "pressure",
+        "value": 54.84,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n613",
+        "modality": "pressure",
+        "value": 56.19,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n636",
+        "modality": "pressure",
+        "value": 45.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n644",
+        "modality": "pressure",
+        "value": 47.65,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n679",
+        "modality": "pressure",
+        "value": 47.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n722",
+        "modality": "pressure",
+        "value": 46.16,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n726",
+        "modality": "pressure",
+        "value": 47.14,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n740",
+        "modality": "pressure",
+        "value": 43.82,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n752",
+        "modality": "pressure",
+        "value": 49.19,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n769",
+        "modality": "pressure",
+        "value": 48.52,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p227",
+        "modality": "flow",
+        "value": 75.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p235",
+        "modality": "flow",
+        "value": 80.45,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:PUMP_1",
+        "modality": "flow",
+        "value": 44.08,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_level:T1",
+        "modality": "level",
+        "value": 3.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      }
+    ]
+  },
+  "2_real_onset_alert_normal_hazard": {
+    "wds_condition": "clean",
+    "wds_timestamp": "2018-10-26 02:10:00",
+    "wds_ground_truth_onset_window": 1,
+    "hazard_timestamp": "2018-01-01 00:00:00",
+    "evidence_message": {
+      "missingness": 0.0,
+      "availability": 1.0,
+      "disagreement": 2.642631159888235,
+      "instability": 0.4564578424367914,
+      "n_evidence_items": 37
+    },
+    "prediction_message": {
+      "score": 0.9968980221108614,
+      "threshold": 0.99,
+      "predictor_version": "frozen_predictor_v1"
+    },
+    "reasoning_message": {
+      "decision": "ALERT",
+      "facts": {
+        "predictor_score": 0.9968980221108614,
+        "predictor_threshold": 0.99,
+        "corroboration_count": 1.0,
+        "predictor_alert": true,
+        "corroborated": true,
+        "hybrid_decision": "ALERT"
+      },
+      "fired_rules": [
+        "R1_PREDICTOR_ALERT",
+        "R2_CORROBORATED",
+        "R3_HYBRID_DECISION"
+      ],
+      "contradictions": [],
+      "corroboration_count": 1.0
+    },
+    "reliability_message": {
+      "unreliable": false,
+      "reasons": [],
+      "final_decision": "ALERT"
+    },
+    "hazard_message": {
+      "state": "NORMAL",
+      "available": true,
+      "elevated": false,
+      "daily_precip_mm": 0.0,
+      "antecedent": {
+        "precip_sum_1d": 0.0,
+        "precip_sum_3d": 3.1,
+        "precip_sum_7d": 7.6
+      },
+      "fired_rules": [
+        "R6_HAZARD_NORMAL"
+      ]
+    },
+    "wds_operational_state": "ALERT",
+    "evidence_reliability_state": "RELIABLE",
+    "integrated_supervisory_action": "ALERT",
+    "combined_explanation": "Knowledge/Reasoning Agent (WDS): At 2018-10-26 02:10:00, decision = ALERT. Rules fired: R1_PREDICTOR_ALERT, R2_CORROBORATED, R3_HYBRID_DECISION. No reliability override applied. Evidence: 37/37 sources available at decision time. Reliability Agent: evidence reliability = RELIABLE. Hazard Agent: independent CWA/CODIS precipitation context = NORMAL. Knowledge Agent (hazard): rules fired: R6_HAZARD_NORMAL. Supervisory Agent: integrated action = ALERT. Hazard context is independent of the BattLeDIM WDS evidence and does not alter the WDS operational state or imply a hydraulic causal link.",
+    "wds_evidence": [
+      {
+        "source": "battledim_pressure:n1",
+        "modality": "pressure",
+        "value": 28.94,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n4",
+        "modality": "pressure",
+        "value": 34.02,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n31",
+        "modality": "pressure",
+        "value": 37.29,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n54",
+        "modality": "pressure",
+        "value": 36.69,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n105",
+        "modality": "pressure",
+        "value": 50.47,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n114",
+        "modality": "pressure",
+        "value": 53.94,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n163",
+        "modality": "pressure",
+        "value": 52.33,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n188",
+        "modality": "pressure",
+        "value": 55.1,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n215",
+        "modality": "pressure",
+        "value": 39.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n229",
+        "modality": "pressure",
+        "value": 52.26,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n288",
+        "modality": "pressure",
+        "value": 52.66,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n296",
+        "modality": "pressure",
+        "value": 42.36,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n332",
+        "modality": "pressure",
+        "value": 56.33,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n342",
+        "modality": "pressure",
+        "value": 46.44,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n410",
+        "modality": "pressure",
+        "value": 30.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n415",
+        "modality": "pressure",
+        "value": 45.36,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n429",
+        "modality": "pressure",
+        "value": 36.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n458",
+        "modality": "pressure",
+        "value": 43.25,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n469",
+        "modality": "pressure",
+        "value": 47.49,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n495",
+        "modality": "pressure",
+        "value": 51.64,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n506",
+        "modality": "pressure",
+        "value": 53.48,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n516",
+        "modality": "pressure",
+        "value": 54.78,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n519",
+        "modality": "pressure",
+        "value": 47.37,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n549",
+        "modality": "pressure",
+        "value": 54.69,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n613",
+        "modality": "pressure",
+        "value": 55.88,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n636",
+        "modality": "pressure",
+        "value": 45.32,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n644",
+        "modality": "pressure",
+        "value": 47.42,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n679",
+        "modality": "pressure",
+        "value": 47.17,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n722",
+        "modality": "pressure",
+        "value": 46.04,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n726",
+        "modality": "pressure",
+        "value": 46.98,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n740",
+        "modality": "pressure",
+        "value": 43.76,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n752",
+        "modality": "pressure",
+        "value": 49.02,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n769",
+        "modality": "pressure",
+        "value": 48.39,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p227",
+        "modality": "flow",
+        "value": 87.32,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p235",
+        "modality": "flow",
+        "value": 89.66,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:PUMP_1",
+        "modality": "flow",
+        "value": 43.91,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_level:T1",
+        "modality": "level",
+        "value": 3.67,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      }
+    ]
+  },
+  "3_elevated_hazard_normal_wds": {
+    "wds_condition": "clean",
+    "wds_timestamp": "2018-07-01 01:00:00",
+    "wds_ground_truth_onset_window": 0,
+    "hazard_timestamp": "2018-01-07 00:00:00",
+    "evidence_message": {
+      "missingness": 0.0,
+      "availability": 1.0,
+      "disagreement": 2.6443631813124826,
+      "instability": 0.7143929740175272,
+      "n_evidence_items": 37
+    },
+    "prediction_message": {
+      "score": 0.550134272315785,
+      "threshold": 0.99,
+      "predictor_version": "frozen_predictor_v1"
+    },
+    "reasoning_message": {
+      "decision": "NO_ALERT",
+      "facts": {
+        "predictor_score": 0.550134272315785,
+        "predictor_threshold": 0.99,
+        "corroboration_count": 2.0,
+        "predictor_alert": false,
+        "corroborated": true,
+        "hybrid_decision": "NO_ALERT"
+      },
+      "fired_rules": [
+        "R1_PREDICTOR_ALERT",
+        "R2_CORROBORATED",
+        "R3_HYBRID_DECISION"
+      ],
+      "contradictions": [],
+      "corroboration_count": 2.0
+    },
+    "reliability_message": {
+      "unreliable": false,
+      "reasons": [],
+      "final_decision": "NO_ALERT"
+    },
+    "hazard_message": {
+      "state": "ELEVATED",
+      "available": true,
+      "elevated": true,
+      "daily_precip_mm": 68.9,
+      "antecedent": {
+        "precip_sum_1d": 68.9,
+        "precip_sum_3d": 95.9,
+        "precip_sum_7d": 96.2
+      },
+      "fired_rules": [
+        "R5_HAZARD_ELEVATED"
+      ]
+    },
+    "wds_operational_state": "NO_ALERT",
+    "evidence_reliability_state": "RELIABLE",
+    "integrated_supervisory_action": "HAZARD_WATCH",
+    "combined_explanation": "Knowledge/Reasoning Agent (WDS): At 2018-07-01 01:00:00, decision = NO_ALERT. Rules fired: R1_PREDICTOR_ALERT, R2_CORROBORATED, R3_HYBRID_DECISION. No reliability override applied. Evidence: 37/37 sources available at decision time. Reliability Agent: evidence reliability = RELIABLE. Hazard Agent: independent CWA/CODIS precipitation context = ELEVATED. Knowledge Agent (hazard): rules fired: R5_HAZARD_ELEVATED. Supervisory Agent: integrated action = HAZARD_WATCH. Hazard context is independent of the BattLeDIM WDS evidence and does not alter the WDS operational state or imply a hydraulic causal link.",
+    "wds_evidence": [
+      {
+        "source": "battledim_pressure:n1",
+        "modality": "pressure",
+        "value": 28.59,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n4",
+        "modality": "pressure",
+        "value": 33.68,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n31",
+        "modality": "pressure",
+        "value": 36.95,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n54",
+        "modality": "pressure",
+        "value": 37.15,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n105",
+        "modality": "pressure",
+        "value": 50.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n114",
+        "modality": "pressure",
+        "value": 54.04,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n163",
+        "modality": "pressure",
+        "value": 52.6,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n188",
+        "modality": "pressure",
+        "value": 55.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n215",
+        "modality": "pressure",
+        "value": 39.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n229",
+        "modality": "pressure",
+        "value": 52.58,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n288",
+        "modality": "pressure",
+        "value": 52.84,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n296",
+        "modality": "pressure",
+        "value": 42.46,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n332",
+        "modality": "pressure",
+        "value": 56.47,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n342",
+        "modality": "pressure",
+        "value": 46.77,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n410",
+        "modality": "pressure",
+        "value": 31.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n415",
+        "modality": "pressure",
+        "value": 45.63,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n429",
+        "modality": "pressure",
+        "value": 36.81,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n458",
+        "modality": "pressure",
+        "value": 43.55,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n469",
+        "modality": "pressure",
+        "value": 47.58,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n495",
+        "modality": "pressure",
+        "value": 51.72,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n506",
+        "modality": "pressure",
+        "value": 53.58,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n516",
+        "modality": "pressure",
+        "value": 54.9,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n519",
+        "modality": "pressure",
+        "value": 47.61,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n549",
+        "modality": "pressure",
+        "value": 54.84,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n613",
+        "modality": "pressure",
+        "value": 56.19,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n636",
+        "modality": "pressure",
+        "value": 45.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n644",
+        "modality": "pressure",
+        "value": 47.65,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n679",
+        "modality": "pressure",
+        "value": 47.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n722",
+        "modality": "pressure",
+        "value": 46.16,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n726",
+        "modality": "pressure",
+        "value": 47.14,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n740",
+        "modality": "pressure",
+        "value": 43.82,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n752",
+        "modality": "pressure",
+        "value": 49.19,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n769",
+        "modality": "pressure",
+        "value": 48.52,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p227",
+        "modality": "flow",
+        "value": 75.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p235",
+        "modality": "flow",
+        "value": 80.45,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:PUMP_1",
+        "modality": "flow",
+        "value": 44.08,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_level:T1",
+        "modality": "level",
+        "value": 3.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      }
+    ]
+  },
+  "4_elevated_hazard_real_onset_alert": {
+    "wds_condition": "clean",
+    "wds_timestamp": "2018-10-26 02:10:00",
+    "wds_ground_truth_onset_window": 1,
+    "hazard_timestamp": "2018-01-07 00:00:00",
+    "evidence_message": {
+      "missingness": 0.0,
+      "availability": 1.0,
+      "disagreement": 2.642631159888235,
+      "instability": 0.4564578424367914,
+      "n_evidence_items": 37
+    },
+    "prediction_message": {
+      "score": 0.9968980221108614,
+      "threshold": 0.99,
+      "predictor_version": "frozen_predictor_v1"
+    },
+    "reasoning_message": {
+      "decision": "ALERT",
+      "facts": {
+        "predictor_score": 0.9968980221108614,
+        "predictor_threshold": 0.99,
+        "corroboration_count": 1.0,
+        "predictor_alert": true,
+        "corroborated": true,
+        "hybrid_decision": "ALERT"
+      },
+      "fired_rules": [
+        "R1_PREDICTOR_ALERT",
+        "R2_CORROBORATED",
+        "R3_HYBRID_DECISION"
+      ],
+      "contradictions": [],
+      "corroboration_count": 1.0
+    },
+    "reliability_message": {
+      "unreliable": false,
+      "reasons": [],
+      "final_decision": "ALERT"
+    },
+    "hazard_message": {
+      "state": "ELEVATED",
+      "available": true,
+      "elevated": true,
+      "daily_precip_mm": 68.9,
+      "antecedent": {
+        "precip_sum_1d": 68.9,
+        "precip_sum_3d": 95.9,
+        "precip_sum_7d": 96.2
+      },
+      "fired_rules": [
+        "R5_HAZARD_ELEVATED"
+      ]
+    },
+    "wds_operational_state": "ALERT",
+    "evidence_reliability_state": "RELIABLE",
+    "integrated_supervisory_action": "ALERT_ELEVATED_HAZARD_CONTEXT",
+    "combined_explanation": "Knowledge/Reasoning Agent (WDS): At 2018-10-26 02:10:00, decision = ALERT. Rules fired: R1_PREDICTOR_ALERT, R2_CORROBORATED, R3_HYBRID_DECISION. No reliability override applied. Evidence: 37/37 sources available at decision time. Reliability Agent: evidence reliability = RELIABLE. Hazard Agent: independent CWA/CODIS precipitation context = ELEVATED. Knowledge Agent (hazard): rules fired: R5_HAZARD_ELEVATED. Supervisory Agent: integrated action = ALERT_ELEVATED_HAZARD_CONTEXT. Hazard context is independent of the BattLeDIM WDS evidence and does not alter the WDS operational state or imply a hydraulic causal link.",
+    "wds_evidence": [
+      {
+        "source": "battledim_pressure:n1",
+        "modality": "pressure",
+        "value": 28.94,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n4",
+        "modality": "pressure",
+        "value": 34.02,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n31",
+        "modality": "pressure",
+        "value": 37.29,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n54",
+        "modality": "pressure",
+        "value": 36.69,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n105",
+        "modality": "pressure",
+        "value": 50.47,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n114",
+        "modality": "pressure",
+        "value": 53.94,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n163",
+        "modality": "pressure",
+        "value": 52.33,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n188",
+        "modality": "pressure",
+        "value": 55.1,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n215",
+        "modality": "pressure",
+        "value": 39.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n229",
+        "modality": "pressure",
+        "value": 52.26,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n288",
+        "modality": "pressure",
+        "value": 52.66,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n296",
+        "modality": "pressure",
+        "value": 42.36,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n332",
+        "modality": "pressure",
+        "value": 56.33,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n342",
+        "modality": "pressure",
+        "value": 46.44,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n410",
+        "modality": "pressure",
+        "value": 30.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n415",
+        "modality": "pressure",
+        "value": 45.36,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n429",
+        "modality": "pressure",
+        "value": 36.35,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n458",
+        "modality": "pressure",
+        "value": 43.25,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n469",
+        "modality": "pressure",
+        "value": 47.49,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n495",
+        "modality": "pressure",
+        "value": 51.64,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n506",
+        "modality": "pressure",
+        "value": 53.48,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n516",
+        "modality": "pressure",
+        "value": 54.78,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n519",
+        "modality": "pressure",
+        "value": 47.37,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n549",
+        "modality": "pressure",
+        "value": 54.69,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n613",
+        "modality": "pressure",
+        "value": 55.88,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n636",
+        "modality": "pressure",
+        "value": 45.32,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n644",
+        "modality": "pressure",
+        "value": 47.42,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n679",
+        "modality": "pressure",
+        "value": 47.17,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n722",
+        "modality": "pressure",
+        "value": 46.04,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n726",
+        "modality": "pressure",
+        "value": 46.98,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n740",
+        "modality": "pressure",
+        "value": 43.76,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n752",
+        "modality": "pressure",
+        "value": 49.02,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n769",
+        "modality": "pressure",
+        "value": 48.39,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p227",
+        "modality": "flow",
+        "value": 87.32,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p235",
+        "modality": "flow",
+        "value": 89.66,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:PUMP_1",
+        "modality": "flow",
+        "value": 43.91,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_level:T1",
+        "modality": "level",
+        "value": 3.67,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      }
+    ]
+  },
+  "5_elevated_hazard_degraded_real_onset": {
+    "wds_condition": "missing_sensor_subset",
+    "wds_timestamp": "2018-07-07 09:10:00",
+    "wds_ground_truth_onset_window": 1,
+    "hazard_timestamp": "2018-01-07 00:00:00",
+    "evidence_message": {
+      "missingness": 0.2972972972972973,
+      "availability": 0.7027027027027026,
+      "disagreement": 2.082738289056929,
+      "instability": 2.32776534588673,
+      "n_evidence_items": 37
+    },
+    "prediction_message": {
+      "score": 0.01303782919428642,
+      "threshold": 0.99,
+      "predictor_version": "frozen_predictor_v1"
+    },
+    "reasoning_message": {
+      "decision": "NO_ALERT",
+      "facts": {
+        "predictor_score": 0.01303782919428642,
+        "predictor_threshold": 0.99,
+        "corroboration_count": 0.0,
+        "predictor_alert": false,
+        "corroborated": false,
+        "hybrid_decision": "NO_ALERT"
+      },
+      "fired_rules": [
+        "R1_PREDICTOR_ALERT",
+        "R2_CORROBORATED",
+        "R3_HYBRID_DECISION"
+      ],
+      "contradictions": [],
+      "corroboration_count": 0.0
+    },
+    "reliability_message": {
+      "unreliable": true,
+      "reasons": [
+        "missingness 0.297 > cutoff 0.2"
+      ],
+      "final_decision": "ABSTAIN"
+    },
+    "hazard_message": {
+      "state": "ELEVATED",
+      "available": true,
+      "elevated": true,
+      "daily_precip_mm": 68.9,
+      "antecedent": {
+        "precip_sum_1d": 68.9,
+        "precip_sum_3d": 95.9,
+        "precip_sum_7d": 96.2
+      },
+      "fired_rules": [
+        "R5_HAZARD_ELEVATED"
+      ]
+    },
+    "wds_operational_state": "ABSTAIN",
+    "evidence_reliability_state": "UNRELIABLE",
+    "integrated_supervisory_action": "ABSTAIN",
+    "combined_explanation": "Knowledge/Reasoning Agent (WDS): At 2018-07-07 09:10:00, decision = ABSTAIN. Rules fired: R1_PREDICTOR_ALERT, R2_CORROBORATED, R3_HYBRID_DECISION. Reliability override applied: missingness 0.297 > cutoff 0.2. Evidence: 26/37 sources available at decision time. Reliability Agent: evidence reliability = UNRELIABLE (missingness 0.297 > cutoff 0.2) Hazard Agent: independent CWA/CODIS precipitation context = ELEVATED. Knowledge Agent (hazard): rules fired: R5_HAZARD_ELEVATED. Supervisory Agent: integrated action = ABSTAIN. Hazard context is independent of the BattLeDIM WDS evidence and does not alter the WDS operational state or imply a hydraulic causal link.",
+    "wds_evidence": [
+      {
+        "source": "battledim_pressure:n1",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n4",
+        "modality": "pressure",
+        "value": 33.94,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n31",
+        "modality": "pressure",
+        "value": 37.24,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n54",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n105",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n114",
+        "modality": "pressure",
+        "value": 53.95,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n163",
+        "modality": "pressure",
+        "value": 52.62,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n188",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n215",
+        "modality": "pressure",
+        "value": 39.09,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n229",
+        "modality": "pressure",
+        "value": 52.61,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n288",
+        "modality": "pressure",
+        "value": 52.74,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n296",
+        "modality": "pressure",
+        "value": 42.39,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n332",
+        "modality": "pressure",
+        "value": 56.42,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n342",
+        "modality": "pressure",
+        "value": 46.84,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n410",
+        "modality": "pressure",
+        "value": 31.31,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n415",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n429",
+        "modality": "pressure",
+        "value": 37.05,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n458",
+        "modality": "pressure",
+        "value": 43.61,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n469",
+        "modality": "pressure",
+        "value": 47.5,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n495",
+        "modality": "pressure",
+        "value": 51.69,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n506",
+        "modality": "pressure",
+        "value": 53.51,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n516",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n519",
+        "modality": "pressure",
+        "value": 47.64,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n549",
+        "modality": "pressure",
+        "value": 54.79,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n613",
+        "modality": "pressure",
+        "value": 56.21,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n636",
+        "modality": "pressure",
+        "value": 45.56,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n644",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n679",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n722",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n726",
+        "modality": "pressure",
+        "value": 47.04,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n740",
+        "modality": "pressure",
+        "value": 43.77,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_pressure:n752",
+        "modality": "pressure",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_pressure:n769",
+        "modality": "pressure",
+        "value": 48.44,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p227",
+        "modality": "flow",
+        "value": 82.44,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:p235",
+        "modality": "flow",
+        "value": 86.21,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      },
+      {
+        "source": "battledim_flow:PUMP_1",
+        "modality": "flow",
+        "value": null,
+        "availability": false,
+        "quality": 0.0,
+        "provenance": "missing at source"
+      },
+      {
+        "source": "battledim_level:T1",
+        "modality": "level",
+        "value": 3.71,
+        "availability": true,
+        "quality": 1.0,
+        "provenance": "raw SCADA reading"
+      }
+    ]
+  }
+}
